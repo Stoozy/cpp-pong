@@ -143,8 +143,8 @@ void run_online(Client &c){
 
             // update ball pos
             b.setPosition(sf::Vector2f(
-                b.getPosition().x + (2 * sin(rad(b.getDirection()))), 
-                b.getPosition().y - (2 * cos(rad(b.getDirection())))
+                b.getPosition().x + (5 * sin(rad(b.getDirection()))), 
+                b.getPosition().y - (5 * cos(rad(b.getDirection())))
             ));
         }
 
@@ -289,8 +289,8 @@ void run_offline(){
 
         // update ball pos
         b.setPosition(sf::Vector2f(
-            b.getPosition().x + (2 * sin(rad(b.getDirection()))), 
-            b.getPosition().y - (2 * cos(rad(b.getDirection())))
+            b.getPosition().x + (5 * sin(rad(b.getDirection()))), 
+            b.getPosition().y - (5 * cos(rad(b.getDirection())))
         ));
         
         //update score 
@@ -324,8 +324,8 @@ void run_offline(){
                 window.close();
         }
 
-        for (int i = 0; i <= 24; ++i) {
-            sf::RectangleShape c(sf::Vector2f(15, 15));
+        for (int i = 0; i <= 26; ++i) {
+            sf::RectangleShape c(sf::Vector2f(10, 10));
             c.setPosition((1080/2) -15, i * 45);
             window.draw(c);
         }
