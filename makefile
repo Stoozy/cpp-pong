@@ -7,7 +7,7 @@ OBJS = Pong.exe
 
 
 all:
-	$(CXX) $(SRCS) $(INCLUDE) $(LIBS) $(LFLAGS) -o $(OBJS) 
+	$(CXX) $(SRCS) $(INCLUDE) $(LIBS) $(LFLAGS) -o $(OBJS)  -static-libgcc -static-libstdc++
 
 clean:
 	del $(OBJS)
