@@ -143,8 +143,8 @@ void run_online(Client &c){
 
             // update ball pos
             b.setPosition(sf::Vector2f(
-                b.getPosition().x + (0.1 * sin(rad(b.getDirection()))), 
-                b.getPosition().y - (0.1 * cos(rad(b.getDirection())))
+                b.getPosition().x + (2 * sin(rad(b.getDirection()))), 
+                b.getPosition().y - (2 * cos(rad(b.getDirection())))
             ));
         }
 
@@ -289,8 +289,8 @@ void run_offline(){
 
         // update ball pos
         b.setPosition(sf::Vector2f(
-            b.getPosition().x + (0.1 * sin(rad(b.getDirection()))), 
-            b.getPosition().y - (0.1 * cos(rad(b.getDirection())))
+            b.getPosition().x + (2 * sin(rad(b.getDirection()))), 
+            b.getPosition().y - (2 * cos(rad(b.getDirection())))
         ));
         
         //update score 
