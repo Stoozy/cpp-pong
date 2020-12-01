@@ -9,5 +9,7 @@ OBJS = Pong.exe
 all:
 	$(CXX) $(SRCS) $(INCLUDE) $(LIBS) $(LFLAGS) -o $(OBJS)  -static-libgcc -static-libstdc++
 
+server:
+	$(CXX) Server.cpp Network.cpp $(INCLUDE) $(LIBS) $(LFLAGS) -o Server.exe  -static-libgcc -static-libstdc++
 clean:
 	del $(OBJS)

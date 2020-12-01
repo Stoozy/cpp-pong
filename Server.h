@@ -3,15 +3,17 @@
 #define SERVER_H
 
 class Server {
+
 private:
 	std::vector<sf::TcpSocket*> clients;
 	sf::TcpListener listener;
 	unsigned short port;
+    sf::SocketSelector selector;
 
 public:
 	Server(unsigned short s);
+    ~Server();
 
-	~Server();
 	void run();
 	void listen();
 	void stop();
